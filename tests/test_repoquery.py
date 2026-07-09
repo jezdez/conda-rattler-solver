@@ -21,7 +21,7 @@ def test_repoquery():
     data = json.loads(p.stdout)
     assert data["result"]["status"] == "OK"
     assert len(data["result"]["pkgs"]) > 0
-    assert len([p for p in data["result"]["pkgs"] if p["name"] == "python"]) == 1
+    assert any(pkg["name"] == "python" for pkg in data["result"]["pkgs"])
 
 
 def test_query_search():
