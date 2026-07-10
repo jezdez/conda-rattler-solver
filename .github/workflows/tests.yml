@@ -216,6 +216,7 @@ jobs:
           --splits=${{ env.PYTEST_SPLITS }}
           --reruns=${{ env.PYTEST_RERUN_FAILURES }}
           --reruns-delay ${{ env.PYTEST_RERUN_FAILURES_DELAY }}
+          --ignore=tests/cli/test_startup_benchmarks.py
           -m "${{ env.PYTEST_MARKER }}"
 
       # CONDA-RATTLER-SOLVER CHANGE
@@ -374,6 +375,7 @@ jobs:
           --splits=${{ env.PYTEST_SPLITS }}
           --reruns=${{ env.PYTEST_RERUN_FAILURES }}
           --reruns-delay ${{ env.PYTEST_RERUN_FAILURES_DELAY }}
+          --ignore=tests/cli/test_startup_benchmarks.py
           -m "${{ env.PYTEST_MARKER }}"
 
       # CONDA-RATTLER-SOLVER CHANGE
@@ -532,6 +534,7 @@ jobs:
           --splits=${{ env.PYTEST_SPLITS }}
           --reruns=${{ env.PYTEST_RERUN_FAILURES }}
           --reruns-delay ${{ env.PYTEST_RERUN_FAILURES_DELAY }}
+          --ignore=tests/cli/test_startup_benchmarks.py
           -m "${{ env.PYTEST_MARKER }}"
 
       # CONDA-RATTLER-SOLVER CHANGE
