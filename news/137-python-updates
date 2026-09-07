@@ -1,0 +1,5 @@
+### Bug fixes
+
+* Preserve installed special packages and their dependency requirements during
+  name-only Python updates, while allowing explicit Python pins, jointly
+  requested updates, and dependency conflicts to change those packages.
